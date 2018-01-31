@@ -1,0 +1,13 @@
+{% block content %} 
+
+{% for app in singleApp  %}
+
+    {% for q, a in app  %}
+    <div><strong>{{q}}</strong></div>
+    <div>{{a}}</div>
+    <br>
+    {% endfor %}
+    
+{% endfor %}
+
+{% endblock %}
