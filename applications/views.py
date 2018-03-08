@@ -36,9 +36,9 @@ def show_applications(request, date):
             datetime_object = datetime.strptime(line['Conversion Date'], '%Y-%m-%d %H:%M:%S %p')
 
             user_datetime = datetime.strptime(date, '%Y-%m-%d')
+            print("user datetime object", user_datetime)
             # import pdb; pdb.set_trace()
             if datetime_object < user_datetime:
-                print(line)
                 appData.append(line)
 
         applicant_names = list()
@@ -48,12 +48,8 @@ def show_applications(request, date):
                 'last_name': application['Last Name'],
                 'email': application['Email']
             }
+            print("application email", application['Email'])
             applicant_names.append(applicant_name)
-        print(applicant_names)
-
-        for name in applicant_names:
-            print(name['first_name'])
-        print(type(applicant_names))
 
     return render(request, 'applications/show_applications.html', {'applicant_names': applicant_names})
 

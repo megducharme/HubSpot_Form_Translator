@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+form *{
+    text-align: center;
+    margin-top: 5x;
+}
+
+.single-app{
+    margin: 2% 1%;
+}
+
+.applicant{
+    text-decoration: none;
+}
+
+.container{
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "applicant-card applicant-card applicant-card"
+}
+
+form input[type=file]{
+    margin-left: 75px;
+}
+
+form h1{
+    color: #E6EBE0;
+}
+
+.btn {
+    background: #E6EBE0;
+    font-family: Arial;
+    color: #5D576B;
+    font-size: 18px;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    border: 1px solid #E6EBE0;
+}
+
+.btn:hover, input[type=hidden]::selection {
+    background: #9BC1BC;
+    text-decoration: none;
+    border: 1px solid #9BC1BC;
+  }
