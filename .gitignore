@@ -6,3 +6,4 @@ node_modules/
 build/
 *.pyc
 all_applications
+formatenv
