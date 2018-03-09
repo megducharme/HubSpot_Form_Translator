@@ -25,7 +25,7 @@ SECRET_KEY = 'j=_j!=$uafk+qk0(nzp1hquh#-oot97xm_m0g2=*54hp#sd^xk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['formatter.bangazon.com']
 
 
 # Application definition
