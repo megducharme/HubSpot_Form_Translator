@@ -1,12 +1,20 @@
+{% extends 'applications/index.html' %}
+
 {% block content %} 
 
 {% for app in singleApp  %}
-
+    <div class="single-app">
     {% for q, a in app  %}
-    <div><strong>{{q}}</strong></div>
-    <div>{{a}}</div>
-    <br>
+        <div>
+            <strong>{{q}}</strong>
+        </div>
+        <div>
+            {{a}}
+        </div>
+
+        <br>
     {% endfor %}
+    </div>
     
 {% endfor %}
 
