@@ -1,10 +1,15 @@
+{% extends 'applications/index.html' %}
+
 {% block content %} 
 
+<div class="grid-container">
 {% for applicant in applicant_names %}
-
-    <a href="{% url 'applications:show_single_application' applicant.email %}">{{applicant.first_name}} {{applicant.last_name}}</a>
-    <br>
-
+    <div class="grid-applicant">
+        <a href="{% url 'applications:show_single_application' applicant.email %}">{{applicant.first_name}} {{applicant.last_name}}</a>
+        <p>{{applicant.date}}</p>
+        <br>
+    </div>
 {% endfor %} 
+</div>
 
 {% endblock %}

@@ -1,12 +1,39 @@
+{% extends 'applications/index.html' %}
+
 {% block content %} 
 
-{% for app in singleApp  %}
+<div class="app-top">
+    <div>
+        <select id="TCD"></select>
+    </div>
+    <div>
+        <select id="cohort"></select>
+    </div>
+    <div>
+        <select id="tuition"></select>
+    </div>
+    <div>
+        <select id="local"></select>
+    </div>
+    <div>
+        <select id="time"></select>
+    </div>
+    <div id="date"></div>
+</div>
 
+{% for app in singleApp  %}
+    <div class="single-app">
     {% for q, a in app  %}
-    <div><strong>{{q}}</strong></div>
-    <div>{{a}}</div>
-    <br>
+        <div>
+            <strong>{{q}}</strong>
+        </div>
+        <div>
+            {{a}}
+        </div>
+
+        <br>
     {% endfor %}
+    </div>
     
 {% endfor %}
 

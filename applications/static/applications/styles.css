@@ -3,32 +3,7 @@ body{
 }
 
 .form-wrapper{
-    display: flex;
-    justify-content: center;
-}
-
-form *{
-    text-align: center;
-    margin-top: 5x;
-}
-
-.single-app{
-    margin: 2% 1%;
-}
-
-.applicant{
-    text-decoration: none;
-}
-
-.container{
-    grid-template-columns: 50px 50px 50px;
-    grid-template-rows: auto;
-    grid-template-areas: 
-      "applicant-card applicant-card applicant-card"
-}
-
-form input[type=file]{
-    margin-left: 75px;
+    margin-left: 3%;
 }
 
 form h1{
@@ -50,3 +25,37 @@ form h1{
     text-decoration: none;
     border: 1px solid #9BC1BC;
   }
+
+.single-app{
+    margin:2%;
+}
+
+/* css grid attempt */
+.grid-applicant {
+    grid-area: applicant;
+    margin:2%;
+}
+  
+.grid-container {
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "applicant applicant applicant applicant";
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    border: none;
+    background-color: white;
+    margin-right: 30px;
+}
+
+.app-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 3% 3% 2%;
+    font-size: 16px;
+}

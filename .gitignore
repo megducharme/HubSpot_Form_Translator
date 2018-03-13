@@ -7,3 +7,4 @@ build/
 *.pyc
 all_applications
 formatenv
+formatter-env

@@ -23,7 +23,7 @@ def upload_csv(request):
         
         date = request.POST['application_date']
 
-    return HttpResponseRedirect('/applications/show_applications/' + date)
+    return HttpResponseRedirect('show_applications/' + date)
 
 def show_applications(request, date):
     print("THIS IS THE DATE", date)
@@ -36,19 +36,19 @@ def show_applications(request, date):
             datetime_object = datetime.strptime(line['Conversion Date'], '%Y-%m-%d %H:%M:%S %p')
 
             user_datetime = datetime.strptime(date, '%Y-%m-%d')
-            print("user datetime object", user_datetime)
             # import pdb; pdb.set_trace()
             if datetime_object < user_datetime:
                 appData.append(line)
 
         applicant_names = list()
         for application in appData:
+            date = datetime.strptime(application['Conversion Date'], '%Y-%m-%d %H:%M:%S %p')
             applicant_name = {
                 'first_name': application['First Name'],
                 'last_name': application['Last Name'],
-                'email': application['Email']
+                'email': application['Email'],
+                'date' : date
             }
-            print("application email", application['Email'])
             applicant_names.append(applicant_name)
 
     return render(request, 'applications/show_applications.html', {'applicant_names': applicant_names})
