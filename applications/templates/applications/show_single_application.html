@@ -6,19 +6,23 @@
     <div>
         <select id="TCD"></select>
     </div>
-    <div>
-        <select id="cohort"></select>
+    <div class="app-name">
+        {{applicantName}}
     </div>
-    <div>
-        <select id="tuition"></select>
+    <div class="appt-details">
+        APPT-<div id="date"></div>@<select id="time"></select>
     </div>
-    <div>
-        <select id="local"></select>
+    <div class="line">
+        <div class="appt-details">
+            <select id="cohort"></select>
+        </div>
+        <div class="appt-details">
+            <select id="tuition"></select>
+        </div>
+        <div class="appt-details">
+            <select id="local"></select>
+        </div>
     </div>
-    <div>
-        <select id="time"></select>
-    </div>
-    <div id="date"></div>
 </div>
 
 {% for app in singleApp  %}

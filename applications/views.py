@@ -71,5 +71,7 @@ def show_single_application(request, email):
                 questions = list(application.keys())
                 answers = list(application.values())
                 singleApp.append(list(zip(questions, answers)))
+
+        applicantName = singleApp[0][0][1] + " " + singleApp[0][1][1]
             
-    return render(request, 'applications/show_single_application.html', {'singleApp': singleApp})
+    return render(request, 'applications/show_single_application.html', {'singleApp': singleApp, 'applicantName': applicantName})

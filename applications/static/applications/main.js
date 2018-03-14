@@ -13,7 +13,7 @@ today = yyyy+'-'+mm+'-'+dd;
 document.getElementById("date").defaultValue = today
 
 
-let TCD = ["TCD", "TCD signed", "TCD sent"]
+let TCD = ["TCD", "TCD-signed", "TCD-sent"]
 for (var i=0;i<TCD.length;i++){
     $('<option/>').val(TCD[i]).html(TCD[i]).appendTo('#TCD');
  }
@@ -24,7 +24,7 @@ for (var i=0;i<cohort.length;i++){
  }
 
 
-let tuition = ["Tuition", "Opp", "Reg"]
+let tuition = ["Tuition", "OPP", "REG"]
 for (var i=0;i<tuition.length;i++){
     $('<option/>').val(tuition[i]).html(tuition[i]).appendTo('#tuition');
  }
@@ -35,7 +35,7 @@ for (var i=0;i<local.length;i++){
  }
 
 
-$('#date').html(mm + "/" + dd + "/" + yyyy)
+$('#date').html(mm + "/" + dd)
 
 let time = ["Time", "2:30pm", "3:30pm", "4:30pm", "8:00am"]
 for (var i=0;i<time.length;i++){

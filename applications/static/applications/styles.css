@@ -30,16 +30,11 @@ form h1{
     margin:2%;
 }
 
-/* css grid attempt */
 .grid-applicant {
     margin:2%;
     padding-left: 20px;
     border-bottom: 1px solid #cecece;
     height: 100%;
-}
-  
-.grid-container {
-
 }
 
 select {
@@ -53,8 +48,26 @@ select {
     cursor: pointer;
 }
 
+select option:first-child{
+    color: red;
+}
+
+.appt-details{
+    display:inherit;
+    margin-right:3%;
+}
+
 select:hover {
     opacity: .5;
+}
+
+.line{
+    display:inherit;
+    margin-right:3%;
+}
+
+.app-name{
+    margin-right:3%;
 }
 
 .name {
@@ -69,7 +82,6 @@ select:hover {
 
 .app-top {
     display: flex;
-    justify-content: space-between;
     margin: 3% 3% 3% 2%;
     font-size: 16px;
 }
