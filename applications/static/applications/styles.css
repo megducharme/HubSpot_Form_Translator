@@ -48,10 +48,6 @@ select {
     cursor: pointer;
 }
 
-select option:first-child{
-    color: red;
-}
-
 .appt-details{
     display:inherit;
     margin-right:3%;
@@ -84,4 +80,8 @@ select:hover {
     display: flex;
     margin: 3% 3% 3% 2%;
     font-size: 16px;
+}
+
+#TCD {
+    margin-right: 15px;
 }
