@@ -32,15 +32,14 @@ form h1{
 
 /* css grid attempt */
 .grid-applicant {
-    grid-area: applicant;
     margin:2%;
+    padding-left: 20px;
+    border-bottom: 1px solid #cecece;
+    height: 100%;
 }
   
 .grid-container {
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-        "applicant applicant applicant applicant";
+
 }
 
 select {
@@ -51,6 +50,21 @@ select {
     border: none;
     background-color: white;
     margin-right: 30px;
+    cursor: pointer;
+}
+
+select:hover {
+    opacity: .5;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.date {
+    font-size: 13px;
+    opacity: .8;
 }
 
 .app-top {
