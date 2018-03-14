@@ -18,7 +18,7 @@ for (var i=0;i<TCD.length;i++){
     $('<option/>').val(TCD[i]).html(TCD[i]).appendTo('#TCD');
  }
 
-let cohort = ["Cohort", "C26", "C27", "C28", "C29", "C30", "C31", "E7", "E8", "E9", "E10"]
+let cohort = ["Cohort", "C26", "C27", "C28", "C29", "C30", "C31", "E7", "E8", "E9", "E10", "DS2", "DS3"]
 for (var i=0;i<cohort.length;i++){
     $('<option/>').val(cohort[i]).html(cohort[i]).appendTo('#cohort');
  }
