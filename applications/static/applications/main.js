@@ -9,9 +9,10 @@ var yyyy = today.getFullYear();
         mm='0'+mm
     } 
 
-today = yyyy+'-'+mm+'-'+dd;
-document.getElementById("date").defaultValue = today
+today = (yyyy+'-'+mm+'-'+dd);
+// document.getElementById("date").defaultValue = today
 
+let tomorrow = (yyyy+'-'+mm+'-'+ (dd + 1))
 
 let TCD = ["TCD", "TCD-signed", "TCD-sent"]
 for (var i=0;i<TCD.length;i++){
@@ -34,10 +35,16 @@ for (var i=0;i<local.length;i++){
     $('<option/>').val(local[i]).html(local[i]).appendTo('#local');
  }
 
+let apptDate = ["Date", (mm + "/" + dd), (mm + "/" + (dd + 1)), (mm + "/" + (dd + 2)), (mm + "/" + (dd + 3))]
+for (var i=0;i<apptDate.length;i++){
+    $('<option/>').val(apptDate[i]).html(apptDate[i]).appendTo('#apptDate');
+ }
 
-$('#date').html(mm + "/" + dd)
 
-let time = ["Time", "2:30pm", "3:30pm", "4:30pm", "8:00am"]
+// $('#date').html(mm + "/" + dd)
+
+
+let time = ["Time", "2:30pm", "3:30pm", "4:30pm", "9:30am", "10:15am", "11:00am", "11:45am", "1:00pm"]
 for (var i=0;i<time.length;i++){
     $('<option/>').val(time[i]).html(time[i]).appendTo('#time');
  }

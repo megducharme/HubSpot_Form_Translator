@@ -26,7 +26,6 @@ def upload_csv(request):
     return HttpResponseRedirect('show_applications/' + date)
 
 def show_applications(request, date):
-    print("THIS IS THE DATE", date)
     with open('all_applications', 'r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
 
@@ -61,16 +60,16 @@ def show_single_application(request, email):
         csv_reader = csv.DictReader(csv_file)
 
         appData = list()
-
         for line in csv_reader:
             appData.append(line)
 
         singleApp = list()
         for application in appData:
             if application['Email'] == email:
-                questions = list(application.keys())
-                answers = list(application.values())
+                questions = list(application.keys())[:-1]
+                answers = list(application.values())[:-1]
                 singleApp.append(list(zip(questions, answers)))
+
 
         applicantName = singleApp[0][0][1] + " " + singleApp[0][1][1]
             
