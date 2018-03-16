@@ -10,44 +10,40 @@ var yyyy = today.getFullYear();
     } 
 
 today = (yyyy+'-'+mm+'-'+dd);
-// document.getElementById("date").defaultValue = today
+$("#date").defaultValue = today
 
 let tomorrow = (yyyy+'-'+mm+'-'+ (dd + 1))
 
 let TCD = ["TCD", "TCD-signed", "TCD-sent"]
 for (var i=0;i<TCD.length;i++){
     $('<option/>').val(TCD[i]).html(TCD[i]).appendTo('#TCD');
- }
+}
 
 let cohort = ["Cohort", "C26", "C27", "C28", "C29", "C30", "C31", "E7", "E8", "E9", "E10", "DS2", "DS3"]
 for (var i=0;i<cohort.length;i++){
     $('<option/>').val(cohort[i]).html(cohort[i]).appendTo('#cohort');
- }
+}
 
 
 let tuition = ["Tuition", "OPP", "REG"]
 for (var i=0;i<tuition.length;i++){
     $('<option/>').val(tuition[i]).html(tuition[i]).appendTo('#tuition');
- }
+}
 
 let local = ["Local/Remote", "Local", "Remote"]
 for (var i=0;i<local.length;i++){
     $('<option/>').val(local[i]).html(local[i]).appendTo('#local');
- }
+}
 
-let apptDate = ["Date", (mm + "/" + dd), (mm + "/" + (dd + 1)), (mm + "/" + (dd + 2)), (mm + "/" + (dd + 3))]
+let apptDate = ["Date", (mm + "/" + dd), (mm + "/" + (dd + 1)), (mm + "/" + (dd + 2)), (mm + "/" + (dd + 3)), (mm + "/" + (dd + 4))]
 for (var i=0;i<apptDate.length;i++){
     $('<option/>').val(apptDate[i]).html(apptDate[i]).appendTo('#apptDate');
- }
+}
 
-
-// $('#date').html(mm + "/" + dd)
-
-
-let time = ["Time", "2:30pm", "3:30pm", "4:30pm", "9:30am", "10:15am", "11:00am", "11:45am", "1:00pm"]
+let time = ["Time", "2:30pm", "3:30pm", "4:30pm", "9:30am", "10:15am", "11:00am", "11:45am", "1:00pm", "8:00pm"]
 for (var i=0;i<time.length;i++){
     $('<option/>').val(time[i]).html(time[i]).appendTo('#time');
- }
+}
 
 
  
