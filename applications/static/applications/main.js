@@ -25,7 +25,7 @@ for (var i=0;i<cohort.length;i++){
 }
 
 
-let tuition = ["Tuition", "OPP", "REG"]
+let tuition = ["Tuition", "OPP", "REG", "REG(GI)"]
 for (var i=0;i<tuition.length;i++){
     $('<option/>').val(tuition[i]).html(tuition[i]).appendTo('#tuition');
 }
