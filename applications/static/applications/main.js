@@ -1,18 +1,22 @@
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth()+1; //January is 0!
-var yyyy = today.getFullYear();
- if(dd<10){
+function addDays(numberOfDays)
+{ 
+    let today = new Date(),
+        dd = today.getDate() + numberOfDays,
+        mm = today.getMonth()+1, //January is 0!
+        yyyy = today.getFullYear();
+
+    if(dd<10){
         dd='0'+dd
     } 
     if(mm<10){
         mm='0'+mm
-    } 
+    }
+    
+    let computedDate = (mm+'/'+dd);
 
-today = (yyyy+'-'+mm+'-'+dd);
-$("#date").defaultValue = today
+    return computedDate;
+}
 
-let tomorrow = (yyyy+'-'+mm+'-'+ (dd + 1))
 
 let TCD = ["TCD", "TCD-signed", "TCD-sent"]
 for (var i=0;i<TCD.length;i++){
@@ -25,7 +29,7 @@ for (var i=0;i<cohort.length;i++){
 }
 
 
-let tuition = ["Tuition", "OPP", "REG", "REG(GI)"]
+let tuition = ["Tuition", "OPP", "REG", "REG(GI)", "Either"]
 for (var i=0;i<tuition.length;i++){
     $('<option/>').val(tuition[i]).html(tuition[i]).appendTo('#tuition');
 }
@@ -35,7 +39,7 @@ for (var i=0;i<local.length;i++){
     $('<option/>').val(local[i]).html(local[i]).appendTo('#local');
 }
 
-let apptDate = ["Date", (mm + "/" + dd), (mm + "/" + (dd + 1)), (mm + "/" + (dd + 2)), (mm + "/" + (dd + 3)), (mm + "/" + (dd + 4))]
+let apptDate = ["Date", addDays(0), addDays(1), addDays(2), addDays(3), addDays(4)]
 for (var i=0;i<apptDate.length;i++){
     $('<option/>').val(apptDate[i]).html(apptDate[i]).appendTo('#apptDate');
 }
@@ -43,7 +47,4 @@ for (var i=0;i<apptDate.length;i++){
 let time = ["Time", "2:30pm", "3:30pm", "4:30pm", "9:30am", "10:15am", "11:00am", "11:45am", "1:00pm", "8:00pm"]
 for (var i=0;i<time.length;i++){
     $('<option/>').val(time[i]).html(time[i]).appendTo('#time');
-}
-
-
- 
+} 
