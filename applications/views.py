@@ -44,7 +44,9 @@ def show_applications(request, cohortSort):
         for line in csv_reader:
             cohortsAppliedTo = line['Which student cohort / program date are you applying for?']
             print("cohorts applied to", cohortsAppliedTo)
-            if cohorts[cohortSort] in cohortsAppliedTo:
+            if(cohortSort == "All"):
+                appData.append(line)
+            elif cohorts[cohortSort] in cohortsAppliedTo:
                 print("cohot to sort by", cohorts[cohortSort])
                 appData.append(line)
 
