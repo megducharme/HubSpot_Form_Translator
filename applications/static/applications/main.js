@@ -28,6 +28,11 @@ for (var i=0;i<cohort.length;i++){
     $('<option/>').val(cohort[i]).html(cohort[i]).appendTo('#cohort');
 }
 
+let cohortSort = ["Cohort", "All", "C25", "C26", "C27", "C28", "C29", "C30", "C31", "E7", "E8", "E9", "E10", "DS2", "DS3"]
+for (var i=0;i<cohortSort.length;i++){
+    $('<option/>').val(cohortSort[i]).html(cohortSort[i]).appendTo('#cohortSort');
+}
+
 
 let tuition = ["Tuition", "OPP", "REG", "REG(GI)", "Either"]
 for (var i=0;i<tuition.length;i++){

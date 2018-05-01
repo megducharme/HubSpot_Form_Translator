@@ -37,7 +37,7 @@ form h1{
     height: 100%;
 }
 
-select {
+.admin-select {
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
