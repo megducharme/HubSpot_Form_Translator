@@ -20,23 +20,31 @@ def upload_csv(request):
         filename = fs.save('all_applications', myfile)
         uploaded_file_url = fs.url(filename)
         data = request.POST
+
+        print(request.POST)
         
-        date = request.POST['application_date']
+        cohort = request.POST['cohort']
 
-    return HttpResponseRedirect('show_applications/' + date)
+    return HttpResponseRedirect('show_applications/' + cohort)
 
-def show_applications(request, date):
+def show_applications(request, cohort):
     with open('all_applications', 'r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
+
+        cohorts = {
+            "C25": "April 2018 Full-time (Day) Web Developer Bootcamp",
+            "C26": "May 2018 Full-time (Day) Web Developer Bootcamp",
+            "C27": "July 2018 Full-time (Day) Web Developer Bootcamp",
+            "C28": "October 2018 Full-time (Day) Web Developer Bootcamp",
+            "C29": "November 2018 Full-time (Day) Web Developer Bootcamp",
+            "E8": "August 2018 Part-time (Evening) Web Developer Bootcamp",
+            "DS2": "August 2018 Data Science Bootcamp"
+        }
 
         appData = list()
         for line in csv_reader:
 
-            datetime_object = datetime.strptime(line['Conversion Date'], '%Y-%m-%d %H:%M:%S %p')
-
-            user_datetime = datetime.strptime(date, '%Y-%m-%d')
-            # import pdb; pdb.set_trace()
-            if datetime_object < user_datetime:
+            if line['Which student cohort / program date are you applying for?'] < user_datetime:
                 appData.append(line)
 
         applicant_names = list()
