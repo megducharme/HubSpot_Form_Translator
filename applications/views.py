@@ -21,13 +21,11 @@ def upload_csv(request):
         uploaded_file_url = fs.url(filename)
         data = request.POST
 
-        print(request.POST)
-        
-        cohort = request.POST['cohort']
+        cohortSort = request.POST['cohort']
 
-    return HttpResponseRedirect('show_applications/' + cohort)
+    return HttpResponseRedirect('show_applications/' + cohortSort)
 
-def show_applications(request, cohort):
+def show_applications(request, cohortSort):
     with open('all_applications', 'r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
 
@@ -41,11 +39,15 @@ def show_applications(request, cohort):
             "DS2": "August 2018 Data Science Bootcamp"
         }
 
+        cohortsAppliedTo = list()
         appData = list()
         for line in csv_reader:
-
-            if line['Which student cohort / program date are you applying for?'] < user_datetime:
+            cohortsAppliedTo = line['Which student cohort / program date are you applying for?']
+            print("cohorts applied to", cohortsAppliedTo)
+            if cohorts[cohortSort] in cohortsAppliedTo:
+                print("cohot to sort by", cohorts[cohortSort])
                 appData.append(line)
+
 
         applicant_names = list()
         for application in appData:
