@@ -89,3 +89,14 @@ select:hover {
 #apptDate{
     margin-right: 2px;
 }
+
+.dropdown{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    border: none;
+    background-color: white;
+    margin-right: 30px;
+    cursor: pointer;
+}

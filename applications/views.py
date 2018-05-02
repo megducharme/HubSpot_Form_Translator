@@ -23,6 +23,8 @@ def upload_csv(request):
 
         cohortSort = request.POST['cohort']
 
+        print("request IS RIGHT HERE!!!", request)
+
     return HttpResponseRedirect('show_applications/' + cohortSort)
 
 def show_applications(request, cohortSort):
