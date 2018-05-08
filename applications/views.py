@@ -43,6 +43,7 @@ def show_applications(request, cohortSort):
 
         cohortsAppliedTo = list()
         appData = list()
+
         for line in csv_reader:
             cohortsAppliedTo = line['Which student cohort / program date are you applying for?']
             print("cohorts applied to", cohortsAppliedTo)
