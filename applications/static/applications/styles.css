@@ -78,8 +78,9 @@ select:hover {
 
 .app-top {
     display: flex;
-    margin: 3% 3% 3% 2%;
+    margin: 3% 0 3% 2%;
     font-size: 16px;
+    justify-content: space-between;
 }
 
 #TCD {

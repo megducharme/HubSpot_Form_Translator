@@ -3,25 +3,23 @@
 {% block content %} 
 
 <div class="app-top">
-    <div>
+    <div class="app-item">
         <select class="admin-select" id="TCD"></select>
     </div>
-    <div class="app-name">
+    <div class="app-item">
         {{applicantName}}
     </div>
-    <div class="appt-details">
+    <div class="app-item">
         APPT-<select id="apptDate" class="admin-select"></select>  @<select class="admin-select" id="time"></select>
     </div>
-    <div class="line">
-        <div class="appt-details">
-            <select class="admin-select" id="cohort"></select>
-        </div>
-        <div class="appt-details">
-            <select class="admin-select" id="tuition"></select>
-        </div>
-        <div class="appt-details">
-            <select class="admin-select" id="local"></select>
-        </div>
+    <div class="app-item">
+        <select class="admin-select" id="cohort"></select>
+    </div>
+    <div class="app-item">
+        <select class="admin-select" id="tuition"></select>
+    </div>
+    <div class="app-item">
+        <select class="admin-select" id="local"></select>
     </div>
 </div>
 
