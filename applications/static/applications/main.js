@@ -53,3 +53,8 @@ let time = ["Time", "2:30pm", "3:30pm", "4:30pm", "9:30am", "10:15am", "11:00am"
 for (var i=0;i<time.length;i++){
     $('<option/>').val(time[i]).html(time[i]).appendTo('#time');
 } 
+
+let jumpStart = ["JS - N/A", "JS - Enrolled", "JS - In Class", "JS - Graduated"]
+for (var i=0;i<jumpStart.length;i++){
+    $('<option/>').val(jumpStart[i]).html(jumpStart[i]).appendTo('#jumpStart');
+} 
