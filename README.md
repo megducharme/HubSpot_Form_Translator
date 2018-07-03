@@ -1,5 +1,5 @@
 # NSS Application Translator
-This Django web application will take an exported csv file from a HubSpot form and filter the applications by cohort and display them for admin use. 
+Due to the nature of our application process - prospective students may apply more than once, they may leave an answer blank, etc., NSS needed a system to track the current state of form submissions in HubSpot. This Django web application will take an exported csv file from a HubSpot form and filter the applications by cohort and display them for admin use.
 
 ## Directions for Browser Use:
 0. Export form submissions from HubSpot
@@ -13,7 +13,7 @@ This Django web application will take an exported csv file from a HubSpot form a
 
 
 ## Directions for Local Use:
-1. create a virtual environment by running `python3 -m pip install --user formatter-env`
-2. activate the virtual environment by running`source formatter-env/bin/activate` in the root directory (where your formatter-env directory is)
-3. finally, install dependencies for the application by running `pip install -r requirements.txt`
-4. to get the application up and running, run `python manage.py runserver` and follow the above steps in your browser!
+1. Create a virtual environment by running `python3 -m pip install --user formatter-env`
+2. Activate the virtual environment by running`source formatter-env/bin/activate` in the root directory (where your formatter-env directory is)
+3. Finally, install dependencies for the application by running `pip install -r requirements.txt`
+4. To get the application up and running, run `python manage.py runserver` and follow the above steps in your browser!
