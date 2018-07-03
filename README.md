@@ -5,10 +5,11 @@ This Django web application will take an exported csv file from a HubSpot form a
 1. Export form submissions from HubSpot
 2. Navigate to formatter.bangazon.com
 3. Upload the exported csv file from HubSpot to the application
-4. Select the cohort to filter by, or select "All" to get all a list of all prospective student applications
-5. Click on the student's name to view their application
-6. The admin options at the top of the page are clickable dropdowns (without styling for printing purposes)
-7. You're done!
+4. Select the cohort to filter by, or select "All" to get a list of all prospective student applications
+5. Click "Upload File"
+6. To view a student's application, click on their name in the list 
+7. The admin options at the top of the page are clickable dropdowns (without styling for printing purposes)
+8. Print!
 
 
 ## Directions for Local Use:
