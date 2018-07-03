@@ -89,5 +89,7 @@ def show_single_application(request, email, cohort):
                 questions = list(application.keys())[:-1]
                 answers = list(application.values())[:-1]
                 singleApp.append(list(zip(questions, answers)))
+
+        applicantName = singleApp[0][0][1] + " " + singleApp[0][1][1]
             
     return render(request, 'applications/show_single_application.html', {'singleApp': singleApp, 'applicantName': applicantName})
