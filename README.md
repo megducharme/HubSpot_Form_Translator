@@ -13,7 +13,8 @@ Due to the nature of our application process - prospective students may apply mo
 
 
 ## Directions for Local Use:
-1. Create a virtual environment by running `python3 -m pip install --user formatter-env`
-2. Activate the virtual environment by running`source formatter-env/bin/activate` in the root directory (where your formatter-env directory is)
-3. Finally, install dependencies for the application by running `pip install -r requirements.txt`
-4. To get the application up and running, run `python manage.py runserver` and follow the above steps in your browser!
+1. Clone the repository to your local machine
+2. Create a virtual environment by running `python3 -m pip install --user formatter-env`
+3. Activate the virtual environment by running `source formatter-env/bin/activate` in the root directory (where your formatter-env directory is located)
+4. Finally, install dependencies for the application in the virtual environment by running `pip install -r requirements.txt`
+5. To get the application up and running locally, run `python manage.py runserver` and follow the above steps in your browser
