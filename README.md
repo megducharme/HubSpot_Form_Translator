@@ -3,7 +3,7 @@ Due to the nature of our application process - prospective students may apply mo
 
 ## Directions for Browser Use:
 0. Export form submissions from HubSpot
-1. Navigate to formatter.bangazon.com
+1. Navigate to [formatter.bangazon.com](formatter.bangazon.com) in your browser (the hosted version)
 2. Upload the exported csv file from HubSpot to the application
 3. Select the cohort to filter by, or select "All" to get a list of all prospective student applications
 4. Click "Upload File"
