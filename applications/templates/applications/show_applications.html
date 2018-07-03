@@ -4,7 +4,7 @@
 <div class="grid-container">
 {% for applicant in applicant_names %}
     <div class="grid-applicant">
-        <span class="name"><a href="{% url 'applications:show_single_application' applicant.email %}">{{applicant.first_name}} {{applicant.last_name}}</a></span>
+        <span class="name"><a href="{% url 'applications:show_single_application' applicant.email applicant.cohort %}">{{applicant.first_name}} {{applicant.last_name}}</a></span>
         <p class="date">{{applicant.date}}</p>
     </div>
 {% endfor %} 
