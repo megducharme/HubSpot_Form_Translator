@@ -85,7 +85,7 @@ def show_single_application(request, email, cohort):
 
         singleApp = list()
         for application in appData:
-            if application['Email'] == email and application['Which student cohort / program date are you applying for?'] == cohorts[cohort] :
+            if application['Email'] == email and cohorts[cohort] in application['Which student cohort / program date are you applying for?']:
                 questions = list(application.keys())[:-1]
                 answers = list(application.values())[:-1]
                 singleApp.append(list(zip(questions, answers)))
