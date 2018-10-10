@@ -35,8 +35,9 @@ def show_applications(request, cohortSort):
             "C29": "November 2018 Full-time (Day) Web Developer Bootcamp",
             "C30": "January 2019 Full-time (Day) Web Developer Bootcamp",
             "C31": "April 2019 Full-time (Day) Web Developer Bootcamp",
-            "E9": "February 2019 Part-time (Evening) Web Developer Bootcamp",
+            "FEWDD": "January 2019 Full-time (Day) Front-end Web Designer/Developer Bootcamp",
             "E8": "August 2018 Part-time (Evening) Web Developer Bootcamp",
+            "E9": "August 2018 Part-time (Evening) Web Developer Bootcamp",
             "DS2": "August 2018 Data Science Bootcamp"
         }
 
