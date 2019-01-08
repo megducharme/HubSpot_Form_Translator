@@ -28,14 +28,9 @@ def show_applications(request, cohortSort):
         csv_reader = csv.DictReader(csv_file)
 
         cohorts = {
-            "C25": "April 2018 Full-time (Day) Web Developer Bootcamp",
-            "C26": "May 2018 Full-time (Day) Web Developer Bootcamp",
-            "C27": "July 2018 Full-time (Day) Web Developer Bootcamp",
-            "C28": "October 2018 Full-time (Day) Web Developer Bootcamp",
-            "C29": "November 2018 Full-time (Day) Web Developer Bootcamp",
-            "C30": "January 2019 Full-time (Day) Web Developer Bootcamp",
             "C31": "February 2019 Full-time (Day) Web Developer Bootcamp",
             "C32": "April 2019 Full-time (Day) Web Developer Bootcamp",
+            "C33": "May 2019 Full-time (Day) Web Developer Bootcamp",
             "FEWDD": "January 2019 Full-time (Day) Front-end Web Designer/Developer Bootcamp",
             "E8": "August 2018 Part-time (Evening) Web Developer Bootcamp",
             "E9": "February 2019 Part-time (Evening) Web Developer Bootcamp",
@@ -72,14 +67,9 @@ def show_applications(request, cohortSort):
 def show_single_application(request, email, cohort):
     
     cohorts = {
-            "C25": "April 2018 Full-time (Day) Web Developer Bootcamp",
-            "C26": "May 2018 Full-time (Day) Web Developer Bootcamp",
-            "C27": "July 2018 Full-time (Day) Web Developer Bootcamp",
-            "C28": "October 2018 Full-time (Day) Web Developer Bootcamp",
-            "C29": "November 2018 Full-time (Day) Web Developer Bootcamp",
-            "C30": "January 2019 Full-time (Day) Web Developer Bootcamp",
             "C31": "February 2019 Full-time (Day) Web Developer Bootcamp",
             "C32": "April 2019 Full-time (Day) Web Developer Bootcamp",
+            "C33": "May 2019 Full-time (Day) Web Developer Bootcamp",
             "FEWDD": "January 2019 Full-time (Day) Front-end Web Designer/Developer Bootcamp",
             "E8": "August 2018 Part-time (Evening) Web Developer Bootcamp",
             "E9": "February 2019 Part-time (Evening) Web Developer Bootcamp",
