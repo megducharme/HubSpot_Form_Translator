@@ -23,12 +23,12 @@ for (var i=0;i<TCD.length;i++){
     $('<option/>').val(TCD[i]).html(TCD[i]).appendTo('#TCD');
 }
 
-let cohort = ["Cohort", "C31", "C32", "C33", "E9", "E10", "DS3"]
+let cohort = ["Cohort", "C31", "C32", "C33", "C34", "E9", "E10", "DS3"]
 for (var i=0;i<cohort.length;i++){
     $('<option/>').val(cohort[i]).html(cohort[i]).appendTo('#cohort');
 }
 
-let cohortSort = ["Cohort", "C31", "C32", "C33", "E9", "E10", "DS3"]
+let cohortSort = ["Cohort", "C31", "C32", "C33", "C34", "E9", "E10", "DS3"]
 for (var i=0;i<cohortSort.length;i++){
     $('<option/>').val(cohortSort[i]).html(cohortSort[i]).appendTo('#cohortSort');
 }
