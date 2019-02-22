@@ -1,0 +1,19 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:latest
+    container_name: hubspot_web
+    ports:
+      - "80:80"
+    volumes:
+      - .:/code
+      - ./config/nginx/dev/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - apphost
+
+  apphost:
+    build: .
+    container_name: hubspot_app
+    restart: always
+    volumes:
+      - .:/code
