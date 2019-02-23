@@ -25,7 +25,13 @@ SECRET_KEY = 'j=_j!=$uafk+qk0(nzp1hquh#-oot97xm_m0g2=*54hp#sd^xk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['formatter.bangazon.com', 'localhost', '127.0.0.1:8084', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'formatter.bangazon.com',
+    'localhost',
+    '127.0.0.1:8084',
+    '127.0.0.1',
+    'applications.nss.team',
+]
 
 
 # Application definition
@@ -42,6 +48,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
