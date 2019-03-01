@@ -30,7 +30,7 @@ def show_applications(request, cohortSort):
         cohorts = {
             "C32": "April 2019 Full-time (Day) Web Developer Bootcamp",
             "C33": "May 2019 Full-time (Day) Web Developer Bootcamp",
-            "DA1": "May 2019 Part-time Data Analytics Bootcamp"
+            "DA1": "May 2019 Part-time Data Analytics Bootcamp",
             "C34": "July 2019 Full-time (Day) Web Developer Bootcamp",
             "DS3": "August 2019 Data Science Bootcamp",
             "E10": "August 2019 Part-time (Evening) Web Developer Bootcamp",
@@ -71,7 +71,7 @@ def show_single_application(request, email, cohort):
     cohorts = {
             "C32": "April 2019 Full-time (Day) Web Developer Bootcamp",
             "C33": "May 2019 Full-time (Day) Web Developer Bootcamp",
-            "DA1": "May 2019 Part-time Data Analytics Bootcamp"
+            "DA1": "May 2019 Part-time Data Analytics Bootcamp",
             "C34": "July 2019 Full-time (Day) Web Developer Bootcamp",
             "DS3": "August 2019 Data Science Bootcamp",
             "E10": "August 2019 Part-time (Evening) Web Developer Bootcamp",
