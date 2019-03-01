@@ -1,5 +1,5 @@
 function addDays(numberOfDays)
-{ 
+{
     let today = new Date(),
         dd = today.getDate() + numberOfDays,
         mm = today.getMonth()+1, //January is 0!
@@ -7,11 +7,11 @@ function addDays(numberOfDays)
 
     if(dd<10){
         dd='0'+dd
-    } 
+    }
     if(mm<10){
         mm='0'+mm
     }
-    
+
     let computedDate = (mm+'/'+dd);
 
     return computedDate;
@@ -23,12 +23,12 @@ for (var i=0;i<TCD.length;i++){
     $('<option/>').val(TCD[i]).html(TCD[i]).appendTo('#TCD');
 }
 
-let cohort = ["Cohort", "C31", "C32", "C33", "C34", "E9", "E10", "DS3"]
+let cohort = ["Cohort", "C32", "C33", "C34", "C35", "C36", "C37", "DA1", "E10", "DS3"]
 for (var i=0;i<cohort.length;i++){
     $('<option/>').val(cohort[i]).html(cohort[i]).appendTo('#cohort');
 }
 
-let cohortSort = ["Cohort", "C31", "C32", "C33", "C34", "E9", "E10", "DS3"]
+let cohortSort = ["Cohort", "C32", "C33", "C34", "C35", "C36", "C37", "DA1", "E10", "DS3"]
 for (var i=0;i<cohortSort.length;i++){
     $('<option/>').val(cohortSort[i]).html(cohortSort[i]).appendTo('#cohortSort');
 }
@@ -52,9 +52,9 @@ for (var i=0;i<apptDate.length;i++){
 let time = ["Time", "2:30pm", "3:30pm", "4:30pm", "9:30am", "10:15am", "11:00am", "11:45am", "1:00pm", "8:00pm"]
 for (var i=0;i<time.length;i++){
     $('<option/>').val(time[i]).html(time[i]).appendTo('#time');
-} 
+}
 
 let jumpStart = ["JS - N/A", "JS - Enrolled", "JS - In Class", "JS - Grad", "JS - Plan"]
 for (var i=0;i<jumpStart.length;i++){
     $('<option/>').val(jumpStart[i]).html(jumpStart[i]).appendTo('#jumpStart');
-} 
+}

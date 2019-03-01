@@ -32,9 +32,9 @@ def show_applications(request, cohortSort):
             "C33": "May 2019 Full-time (Day) Web Developer Bootcamp",
             "DA1": "May 2019 Part-time Data Analytics Bootcamp"
             "C34": "July 2019 Full-time (Day) Web Developer Bootcamp",
-            "DS2": "August 2019 Data Science Bootcamp",
+            "DS3": "August 2019 Data Science Bootcamp",
             "E10": "August 2019 Part-time (Evening) Web Developer Bootcamp",
-            "C35": "August 2019 Full-time (Day) Web Developer Bootcamp",
+            "C35": "August 2019 Full-time (Day) Front-end Web Designer/Developer Bootcamp",
             "C36": "October 2019 Full-time (Day) Web Developer Bootcamp",
             "C37": "November 2019 Full-time (Day) Web Developer Bootcamp"
         }
@@ -73,9 +73,9 @@ def show_single_application(request, email, cohort):
             "C33": "May 2019 Full-time (Day) Web Developer Bootcamp",
             "DA1": "May 2019 Part-time Data Analytics Bootcamp"
             "C34": "July 2019 Full-time (Day) Web Developer Bootcamp",
-            "DS2": "August 2019 Data Science Bootcamp",
+            "DS3": "August 2019 Data Science Bootcamp",
             "E10": "August 2019 Part-time (Evening) Web Developer Bootcamp",
-            "C35": "August 2019 Full-time (Day) Web Developer Bootcamp",
+            "C35": "August 2019 Full-time (Day) Front-end Web Designer/Developer Bootcamp",
             "C36": "October 2019 Full-time (Day) Web Developer Bootcamp",
             "C37": "November 2019 Full-time (Day) Web Developer Bootcamp"
         }
