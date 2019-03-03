@@ -22,5 +22,5 @@ Due to the nature of our application process - prospective students may apply mo
 ## Docker Version
 
 1. `docker-compose build`
-1. `docker-compose run apphost manage.py collectstatic --no-input`
 1. `docker-compose up`
+1. `docker exec -w /code -it hubspot_app python manage.py collectstatic`
