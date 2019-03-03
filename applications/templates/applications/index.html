@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>NSS Student Applications</title>
+  <title>Student Application Formatter</title>
   <link rel="stylesheet" type="text/css" href="{% static 'applications/styles.css' %}" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,7 +16,7 @@
   {% block content %}
   <div class="form-wrapper">
     <div>
-      <h2>Application Formatter</h2>
+      <h2>Student Application Formatter</h2>
     </div>
     <form action="{% url 'applications:upload_csv' %}" method="post" enctype="multipart/form-data">
       {% csrf_token %}

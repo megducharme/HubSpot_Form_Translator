@@ -28,12 +28,13 @@ def show_applications(request, cohortSort):
         csv_reader = csv.DictReader(csv_file)
 
         cohorts = {
-            "C31": "February 2019 Full-time (Day) Web Developer Bootcamp",
             "C32": "April 2019 Full-time (Day) Web Developer Bootcamp",
             "C33": "May 2019 Full-time (Day) Web Developer Bootcamp",
             "C34": "July 2019 Full-time (Day) Web Developer Bootcamp",
-            "E9": "February 2019 Part-time (Evening) Web Developer Bootcamp",
-            "DS2": "August 2018 Data Science Bootcamp"
+            "C35": "August 2019 Full-time (Day) Front-End Web Developer and Design Bootcamp",
+            "E10": "August 2019 Part-time (Evening) Web Developer Bootcamp",
+            "DS2": "August 2018 Data Science Bootcamp",
+            "DA1": "May 2019 Data Analytics Bootcamp",
         }
 
         cohortsAppliedTo = list()
@@ -64,7 +65,7 @@ def show_applications(request, cohortSort):
 
 
 def show_single_application(request, email, cohort):
-    
+
     cohorts = {
             "C31": "February 2019 Full-time (Day) Web Developer Bootcamp",
             "C32": "April 2019 Full-time (Day) Web Developer Bootcamp",
@@ -89,5 +90,5 @@ def show_single_application(request, email, cohort):
                 singleApp.append(list(zip(questions, answers)))
 
         applicantName = singleApp[0][0][1] + " " + singleApp[0][1][1]
-            
+
     return render(request, 'applications/show_single_application.html', {'singleApp': singleApp, 'applicantName': applicantName})
