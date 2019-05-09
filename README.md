@@ -19,8 +19,16 @@ Due to the nature of our application process - prospective students may apply mo
 4. Finally, install dependencies for the application in the virtual environment by running `pip install -r requirements.txt`
 5. To get the application up and running locally, run `python manage.py runserver` and follow the above steps in your browser
 
-## Docker Version
+## Docker Compose Version for Local Development
 
 1. `docker-compose build`
 1. `docker-compose up`
-1. `docker exec -w /code -it hubspot_app python manage.py collectstatic`
+1. In another terminal session, but same directory
+    ```sh
+    docker-compose run apphost manage.py collectstatic --no-input
+    ```
+1. Once that completes, `Ctrl+C` to stop the connection to the container, but in this 2nd terminal session. Keep the process running in the 1st terminal session.
+
+## Config Visualization
+
+![](./docker-compose.png)
