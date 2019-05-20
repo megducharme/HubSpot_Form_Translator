@@ -15,6 +15,5 @@ services:
     build: .
     image: stevebrownlee/hubspotapps
     container_name: hubspot_app
-    restart: always
     volumes:
       - .:/code
